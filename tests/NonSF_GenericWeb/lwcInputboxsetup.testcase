@@ -3,6 +3,9 @@
   <summary/>
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="10fa37ce-b335-48b8-917f-a42c1832fa84" name="ApexConnect" testItemId="1" title="Salesforce Connect: salesforceconnectioncqfweb (Test)">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50XQAS"/>
+      </associations>
       <arguments>
         <argument id="connectionName">
           <value class="value" valueClass="string">JwtOauth</value>
@@ -47,6 +50,9 @@
       </arguments>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="d204db17-1298-416b-8f70-8ef46667c5ec" name="UiWithScreen" testItemId="19" title="On CqfWebPage page">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50YQAS"/>
+      </associations>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">salesforceconnectioncqfweb</value>
@@ -79,6 +85,9 @@
         <clause name="substeps" testItemId="20">
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="dcaffd9d-0095-48d6-bdb0-188af6e66238" name="UiDoAction" testItemId="21" title="Click the L WC Project">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50aQAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:pageobject:field?field=lWCProject&amp;pageId=pageobjects.CqfWebPage"/>
@@ -144,6 +153,9 @@
       </generatedParameters>
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="92e7e627-8262-4b40-bc86-973d5d2709fe" name="UiWithScreen" testItemId="22" title="On SF accountParent component in LWC Project">
+      <associations>
+        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50ZQAS"/>
+      </associations>
       <arguments>
         <argument id="uiConnectionName">
           <value class="value" valueClass="string">salesforceconnectioncqfweb</value>
@@ -175,6 +187,9 @@
         <clause name="substeps" testItemId="23">
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="070a8fa0-e232-4ee9-877e-e4a6594451c5" name="UiDoAction" testItemId="24" title="Set the Enter_account_name field to Ronit">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50bQAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=Enter_account_name&amp;componentId=5cd71547-c934-470c-9115-a10fe7f0307f"/>
@@ -214,6 +229,9 @@
               </generatedParameters>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" guid="4fd7e19b-52bc-4ab5-8d0a-5b2bd34027b1" name="UiAssert" testItemId="26" title="UI Assert">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50cQAC"/>
+              </associations>
               <arguments>
                 <argument id="resultName">
                   <value class="value" valueClass="string">Values</value>
@@ -252,6 +270,9 @@
               </arguments>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="e753bf9b-74f3-4770-8c4c-aa383567ed97" name="UiDoAction" testItemId="34" title="Click the Search_button field">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50dQAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=Search_button&amp;componentId=5c6b2d69-4033-48fd-9f45-8a0f567a8251"/>
@@ -281,6 +302,9 @@
               </arguments>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="f9db18a9-b672-4989-9dd6-7abba7ee01bf" name="UiDoAction" testItemId="35" title="Click the View_ Contacts_button field">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50eQAC"/>
+              </associations>
               <arguments>
                 <argument id="locator">
                   <value class="uiLocator" uri="ui:locator?name=View_Contacts_button&amp;componentId=5c6b2d69-4033-48fd-9f45-8a0f567a8251"/>
@@ -310,6 +334,9 @@
               </arguments>
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" guid="7f4cffeb-3428-41f2-99e3-c08a2459d3ad" name="UiAssert" testItemId="29" title="UI Assert">
+              <associations>
+                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50fQAC"/>
+              </associations>
               <arguments>
                 <argument id="resultName">
                   <value class="value" valueClass="string">Values</value>
@@ -357,4 +384,7 @@
       </clauses>
     </apiCall>
   </steps>
+  <associations>
+    <association assocationType="TM.TEST_CASE" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0edL00000M4XlVQAV" lastUploadedDateTime="2025-11-07T18:10:31Z"/>
+  </associations>
 </testCase>

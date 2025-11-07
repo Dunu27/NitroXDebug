@@ -32,6 +32,16 @@
         </connection>
       </connections>
     </connectionClass>
+    <connectionClass name="testmanager">
+      <connections>
+        <connection id="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" name="PM">
+          <summary/>
+          <connectionUrls>
+            <connectionUrl secureStorageNodeId="b59a2eec-c13f-4d92-ba73-5c3bd55354c3" url="tm:projectName=V3_Application_Regression;projectKey=Nitrox;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://wise-goat-emo5h-dev-ed.trailblaze.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DdL00000gmoC1UAI/005dL00001ZBAiHQAX;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
+          </connectionUrls>
+        </connection>
+      </connections>
+    </connectionClass>
   </connectionClasses>
   <browserConfigurations>
     <browserConfiguration adjustBrowserWidthForChromeIde="true" browserHeight="0" browserWidth="0" name="Full Screen">
@@ -116,4 +126,7 @@
       </devices>
     </browserProvider>
   </browserProviders>
+  <associations>
+    <association assocationType="TM.TEST_PROJECT" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0udL000002a9mnQAA"/>
+  </associations>
 </testProject>

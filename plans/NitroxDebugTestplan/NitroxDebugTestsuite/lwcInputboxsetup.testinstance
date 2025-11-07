@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testPlanInstance guid="e3a501c8-0035-4167-ac88-9bb32401f445" testCaseId="84250d02-7c89-43dc-aaad-aed25452926e" testCasePath="tests/NonSF_GenericWeb/lwcInputboxsetup.testcase">
+  <planSettings/>
+  <planFeatures/>
+  <associations>
+    <association assocationType="TM.TEST_SUITE_CASE" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0zdL000000HQ69QAG"/>
+  </associations>
+</testPlanInstance>
