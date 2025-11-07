@@ -26,8 +26,9 @@
           </connectionUrls>
         </connection>
         <connection id="37a51eb0-c00b-4b9b-84fd-bb55069c1dba" name="JwtOauth">
+          <summary/>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="385e2ade-b225-4088-b536-82eddc704a09" url="sf:environment=PROD_DEV;apiLoginUrl=https://testing250-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5h000009Q6XQEA0/005J2000001MknSIAS;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=C:\\Users\\aswini.samal\\Downloads\\00D5h000009Q6XQ.jks;jwtUsername=anubhav1301sharma@gmail.com;jwtPassword={jwtPassword};jwtCertAlias=jwtcert;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="385e2ade-b225-4088-b536-82eddc704a09" url="sf:environment=PROD_DEV;apiLoginUrl=https://testing250-dev-ed.develop.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00D5h000009Q6XQEA0/005J2000001MknSIAS;clientId={clientId};lightningMode=true;authenticationType=OAUTH_JWT;callbackUrl={callbackUrl};accessToken={accessToken};jwtCertLocation=templates/00D5h000009Q6XQ.jks;jwtUsername=anubhav1301sharma@gmail.com;jwtPassword={jwtPassword};jwtCertAlias=jwtcert;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
       </connections>
