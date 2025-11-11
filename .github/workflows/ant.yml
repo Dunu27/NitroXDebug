@@ -1,0 +1,57 @@
+# This workflow will build a Java project with Ant
+# For more information see: https://docs.github.com/en/actions/automating-builds-and-tests/building-and-testing-java-with-ant
+
+name: Java CI
+
+on:
+  push:
+    branches: [ "master" ]
+  pull_request:
+    branches: [ "master" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PROVAR_HOME: ${{ github.workspace }}/ProvarHome
+      PROJECT_DIR: ${{ github.workspace }}
+
+    steps:
+      # Checkout source code
+      - uses: actions/checkout@v4
+
+      # Set up JDK 21
+      - name: Set up JDK 21
+        uses: actions/setup-java@v4
+        with:
+          java-version: '21'
+          distribution: 'temurin'
+
+      # Run Ant build
+      - name: Build with Ant
+        run: |
+          mkdir $GITHUB_WORKSPACE/ProvarHome
+          curl -O https://download.provartesting.com/3.0.3/Provar_ANT_3.0.3.zip
+          unzip -o Provar_ANT_3.0.3.zip -d ProvarHome
+          rm Provar_ANT_3.0.3.zip
+          sudo apt-get update && sudo apt-get upgrade -y      
+          wget -q -O - https://dl-ssl.google.com/linux/linux_signing_key.pub | sudo apt-key add -        
+          echo "deb [arch=amd64] http://dl.google.com/linux/chrome/deb/ stable main" | sudo tee -a /etc/apt/sources.list.d/google-chrome.list
+          sudo apt-get -y install google-chrome-stable
+          sudo add-apt-repository ppa:mozillateam/firefox-next -y
+          sudo apt-get install -y firefox
+          echo $PROVAR_HOME
+          echo $PROJECT_DIR
+          xvfb-run ant -f $PROJECT_DIR/ANT/build.xml
+
+      # Upload artifacts
+      - uses: actions/upload-artifact@v4
+        with:
+          name: Execution Report
+          path: ${{ env.PROJECT_DIR }}/ANT/Results/*
+
+      - uses: actions/upload-artifact@v4
+        if: failure()
+        with:
+          name: Execution Report (Failed)
+          path: ${{ env.PROJECT_DIR }}/ANT/Results/*
