@@ -26,15 +26,19 @@ jobs:
         with:
           java-version: '21'
           distribution: 'temurin'
-      - name: Save ping output
+      - name: Check HTTPS connectivity
         run: |
-             ping -c 4 prod.provar.cloud > ping_result.txt || true
-
-      - name: Upload ping result
-        uses: actions/upload-artifact@v4
-        with:
-           name: ping-output
-           path: ping_result.txt    
+        URL="https://prod.provar.cloud/artifactory/artifactory/"
+        echo "-------------------------------------------"
+        echo "🌐 Checking HTTPS connectivity to: $URL"
+        echo "📅 Timestamp: $(date)"
+        echo "-------------------------------------------"
+    
+        curl -I --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
+    
+        echo "-------------------------------------------"
+        echo "✅ Connectivity test completed at $(date)"
+        echo "-------------------------------------------"
 
       # Run Ant build
       - name: Build with Ant
