@@ -67,7 +67,7 @@ jobs:
       - uses: actions/upload-artifact@v4
         with:
           name: Nitrox 
-          path: $HOME/Provar/.nitroX
+          path: $HOME/Provar/.nitroX/*
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
