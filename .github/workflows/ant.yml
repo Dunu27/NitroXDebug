@@ -56,6 +56,7 @@ jobs:
           echo $PROVAR_HOME
           echo $PROJECT_DIR
           xvfb-run ant -f $PROJECT_DIR/ANT/build.xml
+          du -sh "$HOME/Provar/.nitroX"
 
       # Upload artifacts
       - uses: actions/upload-artifact@v4
