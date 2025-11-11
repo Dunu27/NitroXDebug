@@ -34,7 +34,7 @@ jobs:
          echo "📅 Timestamp: $(date)"
          echo "-------------------------------------------"
     
-         curl -I --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
+         curl -IL --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
     
          echo "-------------------------------------------"
          echo "✅ Connectivity test completed at $(date)"
