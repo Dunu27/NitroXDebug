@@ -29,17 +29,11 @@ jobs:
       - name: Check HTTPS connectivity
         run: |
          URL="https://prod.provar.cloud/artifactory/artifactory/"
-         echo "-------------------------------------------"
-         echo "🌐 Checking HTTPS connectivity to: $URL"
-         echo "📅 Timestamp: $(date)"
-         echo "-------------------------------------------"
-    
-         curl -IL --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
-    
-         echo "-------------------------------------------"
-         echo "✅ Connectivity test completed at $(date)"
-         echo "-------------------------------------------"
-
+         echo "Checking HTTPS connectivity to: $URL"
+         echo "Timestamp: $(date)"
+         curl -IL --connect-timeout 10 "$URL" || echo " Unable to reach $URL"
+         echo "Connectivity test completed at $(date)"
+         
       # Run Ant build
       - name: Build with Ant
         run: |
@@ -66,8 +60,8 @@ jobs:
        # Upload nitrox artifacts
       - uses: actions/upload-artifact@v4
         with:
-          name: Nitrox 
-          path: /home/runner/Provar/.nitroX/**/*
+          name: NitroxLogs
+          path: ${{ github.workspace }}/.provarCaches 
       - uses: actions/upload-artifact@v4
         if: failure()
         with:
