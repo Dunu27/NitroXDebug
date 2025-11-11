@@ -53,11 +53,19 @@ jobs:
           name: Execution Report
           path: ${{ env.PROJECT_DIR }}/ANT/Results/*
 
+      - name: Upload Cache Logs
+        uses: actions/upload-artifact@v4
+        with:
+          name: CacheLogs
+          path: ${{ github.workspace }}/.provarCaches
+          include-hidden-files: true
+
       - name: Upload Nitrox Logs
         uses: actions/upload-artifact@v4
         with:
           name: NitroxLogs
-          path: ${{ github.workspace }}/.provarCaches
+          path: ${{ env.HOME }}/Provar/.nitroX
+          include-hidden-files: true    
 
       - name: Upload Execution Report (Failed)
         if: failure()
