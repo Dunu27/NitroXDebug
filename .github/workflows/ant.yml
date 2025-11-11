@@ -28,17 +28,17 @@ jobs:
           distribution: 'temurin'
       - name: Check HTTPS connectivity
         run: |
-        URL="https://prod.provar.cloud/artifactory/artifactory/"
-        echo "-------------------------------------------"
-        echo "🌐 Checking HTTPS connectivity to: $URL"
-        echo "📅 Timestamp: $(date)"
-        echo "-------------------------------------------"
+         URL="https://prod.provar.cloud/artifactory/artifactory/"
+         echo "-------------------------------------------"
+         echo "🌐 Checking HTTPS connectivity to: $URL"
+         echo "📅 Timestamp: $(date)"
+         echo "-------------------------------------------"
     
-        curl -I --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
+         curl -I --connect-timeout 10 "$URL" || echo "❌ Unable to reach $URL"
     
-        echo "-------------------------------------------"
-        echo "✅ Connectivity test completed at $(date)"
-        echo "-------------------------------------------"
+         echo "-------------------------------------------"
+         echo "✅ Connectivity test completed at $(date)"
+         echo "-------------------------------------------"
 
       # Run Ant build
       - name: Build with Ant
