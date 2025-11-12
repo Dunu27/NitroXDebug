@@ -57,7 +57,7 @@ jobs:
         uses: actions/upload-artifact@v4
         with:
           name: CacheLogs
-          path: ${{ github.workspace }}/.provarCaches
+          path: ${{ env.PROJECT_DIR }}/.provarCaches
           include-hidden-files: true
 
       - name: Upload Nitrox Logs
