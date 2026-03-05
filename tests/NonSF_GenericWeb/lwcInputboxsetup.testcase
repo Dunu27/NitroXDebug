@@ -4,7 +4,7 @@
   <steps>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.testapis.ApexConnect" guid="10fa37ce-b335-48b8-917f-a42c1832fa84" name="ApexConnect" testItemId="1" title="Salesforce Connect: salesforceconnectioncqfweb (Test)">
       <associations>
-        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50XQAS"/>
+        <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh5wIAD"/>
       </associations>
       <arguments>
         <argument id="connectionName">
@@ -51,7 +51,7 @@
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="d204db17-1298-416b-8f70-8ef46667c5ec" name="UiWithScreen" testItemId="19" title="On CqfWebPage page">
       <associations>
-        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50YQAS"/>
+        <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh5xIAD"/>
       </associations>
       <arguments>
         <argument id="uiConnectionName">
@@ -86,7 +86,7 @@
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="dcaffd9d-0095-48d6-bdb0-188af6e66238" name="UiDoAction" testItemId="21" title="Click the L WC Project">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50aQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh5zIAD"/>
               </associations>
               <arguments>
                 <argument id="locator">
@@ -154,7 +154,7 @@
     </apiCall>
     <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiWithScreen" guid="92e7e627-8262-4b40-bc86-973d5d2709fe" name="UiWithScreen" testItemId="22" title="On SF accountParent component in LWC Project">
       <associations>
-        <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50ZQAS"/>
+        <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh5yIAD"/>
       </associations>
       <arguments>
         <argument id="uiConnectionName">
@@ -188,7 +188,7 @@
           <steps>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="070a8fa0-e232-4ee9-877e-e4a6594451c5" name="UiDoAction" testItemId="24" title="Set the Enter_account_name field to Ronit">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50bQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh60IAD"/>
               </associations>
               <arguments>
                 <argument id="locator">
@@ -230,7 +230,7 @@
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" guid="4fd7e19b-52bc-4ab5-8d0a-5b2bd34027b1" name="UiAssert" testItemId="26" title="UI Assert">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50cQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh61IAD"/>
               </associations>
               <arguments>
                 <argument id="resultName">
@@ -271,7 +271,7 @@
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="e753bf9b-74f3-4770-8c4c-aa383567ed97" name="UiDoAction" testItemId="34" title="Click the Search_button field">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50dQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh62IAD"/>
               </associations>
               <arguments>
                 <argument id="locator">
@@ -303,7 +303,7 @@
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiDoAction" guid="f9db18a9-b672-4989-9dd6-7abba7ee01bf" name="UiDoAction" testItemId="35" title="Click the View_ Contacts_button field">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50eQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh63IAD"/>
               </associations>
               <arguments>
                 <argument id="locator">
@@ -335,7 +335,7 @@
             </apiCall>
             <apiCall apiId="com.provar.plugins.forcedotcom.core.ui.UiAssert" guid="7f4cffeb-3428-41f2-99e3-c08a2459d3ad" name="UiAssert" testItemId="29" title="UI Assert">
               <associations>
-                <association assocationType="TM.TEST_STEP" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0ydL000000G50fQAC"/>
+                <association assocationType="TM.TEST_STEP" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a12F900000RDh64IAD"/>
               </associations>
               <arguments>
                 <argument id="resultName">
@@ -385,6 +385,6 @@
     </apiCall>
   </steps>
   <associations>
-    <association assocationType="TM.TEST_CASE" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0edL00000M4XlVQAV" lastUploadedDateTime="2025-11-07T18:10:31Z"/>
+    <association assocationType="TM.TEST_CASE" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a0hF900000ZoC7cIAF" lastUploadedDateTime="2026-03-05T20:37:23Z"/>
   </associations>
 </testCase>

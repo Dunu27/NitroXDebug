@@ -3,6 +3,6 @@
   <planSettings/>
   <planFeatures/>
   <associations>
-    <association assocationType="TM.TEST_SUITE_CASE" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0zdL000000HQ69QAG"/>
+    <association assocationType="TM.TEST_SUITE_CASE" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a13F900000asZcLIAU"/>
   </associations>
 </testPlanInstance>

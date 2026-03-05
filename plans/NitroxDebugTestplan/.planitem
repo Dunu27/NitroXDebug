@@ -2,6 +2,19 @@
 <testPlan guid="04d8e81a-61c1-418b-b48e-c5192987d598">
   <planSettings/>
   <planFeatures>
+    <planFeature enabled="true" name="PIECHART" type="OUTPUT">
+      <settings mutable="Mutable">
+        <namedValue name="enabled">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="includeLegend">
+          <value class="value" valueClass="boolean">true</value>
+        </namedValue>
+        <namedValue name="artifactName">
+          <value class="value" valueClass="string">pieChart.png</value>
+        </namedValue>
+      </settings>
+    </planFeature>
     <planFeature enabled="true" name="PDF" type="OUTPUT">
       <settings mutable="Mutable">
         <namedValue name="enabled">
@@ -73,24 +86,8 @@
         </namedValue>
       </settings>
     </planFeature>
-    <planFeature enabled="true" name="PIECHART" type="OUTPUT">
-      <settings mutable="Mutable">
-        <namedValue name="enabled">
-          <value class="value" valueClass="boolean">true</value>
-        </namedValue>
-        <namedValue name="includeLegend">
-          <value class="value" valueClass="boolean">true</value>
-        </namedValue>
-        <namedValue name="artifactName">
-          <value class="value" valueClass="string">pieChart.png</value>
-        </namedValue>
-      </settings>
-    </planFeature>
-    <planFeature connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" enabled="true" name="TEST_MANAGER" type="REPORTING">
-      <settings mutable="Mutable"/>
-    </planFeature>
   </planFeatures>
   <associations>
-    <association assocationType="TM.TEST_PLAN" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0tdL000008C1LVQA0"/>
+    <association assocationType="TM.TEST_PLAN" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a0xF900001apCc8IAE"/>
   </associations>
 </testPlan>

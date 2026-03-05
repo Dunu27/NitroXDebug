@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject guid="a5c9eea3-c639-4722-ac56-86e09d7b8e76" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop">
+<testProject guid="a5c9eea3-c639-4722-ac56-86e09d7b8e76" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedEnvironment="ABC">
   <title>/V3_Application_Regression/.testproject</title>
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
@@ -8,6 +8,14 @@
   <sourcePath>src</sourcePath>
   <secureStoragePath>.secrets</secureStoragePath>
   <browserDebugPort>0</browserDebugPort>
+  <environments>
+    <environment guid="7d3b69ba-c15f-4d8e-aa83-9023653477b4" name="ABC">
+      <summary/>
+      <associations>
+        <association assocationType="TM.ENVIRONMENT" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a09F900004zG5GXIA0"/>
+      </associations>
+    </environment>
+  </environments>
   <connectionClasses>
     <connectionClass name="ui">
       <connections>
@@ -35,10 +43,10 @@
     </connectionClass>
     <connectionClass name="testmanager">
       <connections>
-        <connection id="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" name="PM">
-          <summary/>
+        <connection id="312d5fcd-7d77-4bce-8830-02f20346c007" name="PM">
+          <summary>\t</summary>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="b59a2eec-c13f-4d92-ba73-5c3bd55354c3" url="tm:projectName=V3_Application_Regression;projectKey=Nitrox;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://wise-goat-emo5h-dev-ed.trailblaze.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DdL00000gmoC1UAI/005dL00001ZBAiHQAX;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="c65d87fd-896d-4d6a-84bc-6eca17f30521" url="tm:projectName=V3_Application_Regression;projectKey=123456;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://curious-fox-ib6cyq-dev-ed.trailblaze.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DF9000003fnSmMAI/005F900000ATlM3IAL;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
       </connections>
@@ -128,6 +136,6 @@
     </browserProvider>
   </browserProviders>
   <associations>
-    <association assocationType="TM.TEST_PROJECT" connectionId="eccbe418-6a41-45fe-a5b3-6d8d7cb6eea9" entityKey="a0udL000002a9mnQAA"/>
+    <association assocationType="TM.TEST_PROJECT" connectionId="312d5fcd-7d77-4bce-8830-02f20346c007" entityKey="a0yF900005GMSEOIA5"/>
   </associations>
 </testProject>
