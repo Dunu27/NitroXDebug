@@ -1,8 +1,8 @@
 <project default="runtests">
 	<property environment="env"/>
-	<property name="provar.home" value="C:\Users\aswini.samal\Downloads\Provar_ANT_3.0.3"/>
-	<property name="testproject.home" value=".."/>
-	<property name="testproject.results" value="../ANT/Results"/>
+	<property name="provar.home" value="${env.PROVAR_HOME}"/>
+	<property name="testproject.home" value="${env.PROJECT_DIR}"/>
+	<property name="testproject.results" value="${env.PROJECT_DIR}/ANT/Results"/>
 	<property name="secrets.password" value="Provar@123"/>
 	<property name="testenvironment.secretspassword" value="${env.ProvarSecretsPassword_EnvName}"/>
 	
@@ -26,7 +26,7 @@
 				webBrowserDeviceName="Full Screen" 
 				excludeCallableTestCases="false" 
 				salesforceMetadataCache="Reuse" 
-				projectCachePath="../../.provarCaches"
+				projectCachePath="${env.PROJECT_DIR}/.provarCaches"
 				testOutputlevel="BASIC" 
 				pluginOutputlevel="WARNING"
 				stopTestRunOnError="false"
@@ -34,6 +34,7 @@
 				testEnvironmentSecretsPassword="${testenvironment.secretspassword}"
 				sendEmail="NO"
 				invokeTestRunMonitor="true"
+				licensePath="${testproject.home}/.licenses"
 				>
 		
 			 <fileset dir="../tests/NonSF_GenericWeb"><include name="lwcInputboxsetup.testcase"/></fileset>

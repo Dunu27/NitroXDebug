@@ -192,7 +192,7 @@
               </associations>
               <arguments>
                 <argument id="locator">
-                  <value class="uiLocator" uri="ui:locator?name=Enter_account_name&amp;componentId=5cd71547-c934-470c-9115-a10fe7f0307f"/>
+                  <value class="uiLocator" uri="ui:locator?name=Enter_account_name&amp;componentId=0c6795ef-c8bf-4209-824c-3d45a783f004"/>
                 </argument>
                 <argument id="interaction">
                   <value class="uiInteraction" uri="ui:interaction?name=set"/>
@@ -242,7 +242,7 @@
                 <argument id="fieldAssertions">
                   <value class="valueList" mutable="Mutable">
                     <uiFieldAssertion resultName="Enter_account_name">
-                      <fieldLocator uri="ui:locator?name=Enter_account_name&amp;componentId=5cd71547-c934-470c-9115-a10fe7f0307f"/>
+                      <fieldLocator uri="ui:locator?name=Enter_account_name&amp;componentId=0c6795ef-c8bf-4209-824c-3d45a783f004"/>
                       <attributeAssertions>
                         <uiAttributeAssertion attributeName="value" comparisonType="EqualTo" normalize="true">
                           <value class="value" valueClass="string">Ronit</value>

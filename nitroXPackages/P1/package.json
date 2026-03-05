@@ -1,0 +1,8 @@
+{
+  "name" : "P1",
+  "description" : "",
+  "ignoreComponents" : [ ],
+  "rootComponent" : {
+    "allowedNamespace" : [ ]
+  }
+}

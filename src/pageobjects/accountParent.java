@@ -16,7 +16,7 @@ import com.provar.core.testapi.annotations.*;
 public class accountParent {
 
 	@FindBy(xpath = ".//lightning-input[@type='text']")
-	@WebComponentMapping(componentId = "5cd71547-c934-470c-9115-a10fe7f0307f")
+	@WebComponentMapping(componentId = "0c6795ef-c8bf-4209-824c-3d45a783f004")
 	public WebComponent Enter_account_name;
 	@FindBy(xpath = ".//lightning-button[@label='Search']")
 	@WebComponentMapping(componentId = "5c6b2d69-4033-48fd-9f45-8a0f567a8251")
