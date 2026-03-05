@@ -46,7 +46,7 @@
         <connection id="312d5fcd-7d77-4bce-8830-02f20346c007" name="PM">
           <summary>\t</summary>
           <connectionUrls>
-            <connectionUrl secureStorageNodeId="c65d87fd-896d-4d6a-84bc-6eca17f30521" url="tm:projectName=V3_Application_Regression;projectKey=123456;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://curious-fox-ib6cyq-dev-ed.trailblaze.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DF9000003fnSmMAI/005F900000ATlM3IAL;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
+            <connectionUrl secureStorageNodeId="c65d87fd-896d-4d6a-84bc-6eca17f30521" url="tm:projectName=V3_Application_Regression;projectKey=123456;clientId={clientId};clientSecret={clientSecret};callbackUrl={callbackUrl};environment=PROD_DEV;accessToken={accessToken};refreshToken={refreshToken};apiLoginUrl=https://curious-fox-ib6cyq-dev-ed.trailblaze.my.salesforce.com;identityServiceUrl=https://login.salesforce.com/id/00DF9000003fnSmMAI/005F900000ATlM3IAL;sendScreenshots=true;authenticationType=OAUTH_MANAGED;jwtCertType=JKS"/>
           </connectionUrls>
         </connection>
       </connections>
