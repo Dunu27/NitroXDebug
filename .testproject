@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<testProject guid="a5c9eea3-c639-4722-ac56-86e09d7b8e76" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedEnvironment="ABC">
-  <!-- <title>/V3_Application_Regression/.testproject</title> -->
+  <!--<testProject guid="a5c9eea3-c639-4722-ac56-86e09d7b8e76" secretsEncryption="JASYPT" selectedBrowserProviderDeviceName="Full Screen" selectedBrowserProviderName="Desktop" selectedEnvironment="ABC">
+ <title>/V3_Application_Regression/.testproject</title> -->
   <configPath>config</configPath>
   <testsPath>tests</testsPath>
   <testPlansPath>plans</testPlansPath>
